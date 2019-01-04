@@ -1,0 +1,64 @@
+body {
+    background-image: url(https://images.wallpaperscraft.com/image/stars_sky_shore_84534_1366x768.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color: #2B2D2C;
+	margin:0;
+	min-height:100%;
+	min-height: 800px;
+	overflow: hidden;
+}
+
+.header {
+font-family: 'Pacifico', cursive;
+font-size: 50px;
+color:white;
+text-align: center;
+text-decoration: none;
+text-shadow: 3px 3px 3px black;
+}
+
+
+
+.container {
+	margin:5px 0px 0px 0px;
+    display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items: center;
+    height:720px;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.btn-group {
+display:flex;
+flex-wrap:wrap;
+flex-direction:row;	
+padding:0px 0px 0px 10px;
+align-content:;
+border: 2px dashed black;
+justify-content:;
+width:230px;
+background-color:rgba(55, 57, 55, 0.5);
+
+}
+.btn {
+padding: 5px 15px 0px 0px;
+transition: all 0.5s;
+}
+
+.btn:hover {
+
+transform:scale(1.1);
+}
+
+
+.btn-group img {
+	width:100px;
+	height:100px;
+}
+
+
+
