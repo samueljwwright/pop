@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Quicksand");
+@import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
+
+
+body,html {
+  margin: 0;
+  overflow-x: hidden;
+}
+header {
+  background-image: url(https://images.freeimages.com/images/large-previews/335/nelson-lakes-1372744.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.sec--top {
+  display: flex;
+}
+
+.main-nav {
+  margin-left: auto;
+  margin-bottom: 12em;
+  z-index: 1001;
+}
+.main-nav ul {
+  list-style-type: none;
+}
+header ul li {
+  display: inline-block;
+  padding: 0em 3em 0em 3em;
+  font-family: helvetica;
+  color: White;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  font-weight: bold;
+}
+header ul li:hover {
+  margin-bottom: -2em;
+  padding-bottom: 1em;
+  border-bottom: 3px solid;
+}
+// header ul li:nth-child(4):hover {
+//   border-bottom: 0;
+//  }
+.active {
+  padding-bottom: 1em;
+  margin-bottom: -2em;
+  color: #ededed;
+  border-bottom: 3px solid #ededed;
+}
+
+.title {
+  font-family: "Poiret One", cursive;
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.title span {
+  letter-spacing: 5px;
+}
+.btn--container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 14em;
+}
+.btn {
+  margin: 0em 0.5em 0em 0.5em;
+  cursor: pointer;
+}
+
+.btn--reg {
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 1em 2em 1em 2em;
+  background-image: linear-gradient(to top, #ef5858 25%, #f97c4a);
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+.btn--reg:hover {
+  box-shadow: 0px 0px 0px 1px #f97c4a;
+}
+.btn--log {
+  border: 1px solid #f97c4a;
+  border-radius: 100px;
+  padding: 1em 2em 1em 2em;
+  background-color: white;
+  color: #f97c4a;
+  font-family: "Quicksand", sans-serif;
+}
+.btn--log:hover {
+  box-shadow: 0px 0px 0px 1px white;
+}
+
+// #drop--menu {
+//   display: none;
+//   position: absolute;
+//   font-family: "Quicksand", sans-serif;
+//   background-color: rgba(255, 255, 255, 0.5);
+//   z-index: 1;
+//   width: 160px;
+//   right: 0;
+//   margin-top: -12em;
+//   text-align: center;
+//   border: 1px solid #f97c4a;
+//   border-radius: 10px;
+// }
+#drop--menu {
+  display: none;
+  position: absolute;
+  font-family: "Quicksand", sans-serif;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 120px;
+  right: 0;
+  margin-top: -12em;
+  text-align: center;
+  border: 3px solid white;
+  border-right: 0;
+  color: White;
+}
+.menu--title {
+  text-decoration: underline;
+}
+
+// .menu--title {
+//   color: #f97c4a;
+//   text-decoration: underline;
+// }
+.menu--icon {
+  position: absolute;
+  right: 0em;
+}
+.menu--item {
+  padding-top: 1em;
+}
+.menu--x {
+  position: absolute;
+  padding: 0.25em 0em 0em 1.4em;
+  cursor: pointer;
+}
+.vis {
+  display: block !important;
+}
+.gallery--section{
+  text-align:center;
+}
+.gallery {
+  display: flex;
+  justify-content: space-around;
+}
+.gal--img {
+  width: 256px;
+  height: 256px;
+  padding: 1em;
+  transition: 0.7s;
+}
+.gal--img:hover {
+  transform: scale(1.1);
+}
+
+.section--title--wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0em;
+}
+.section--title {
+  text-align: center;
+  font-family: arial;
+  font-size: 2em;
+  cursor: pointer;
+  color: black;
+}
+.section--title--text {
+  padding-bottom: 0.5em;
+  font-family: "Poiret One", cursive;
+  color: black;
+  text-transform: uppercase;
+}
+.underline {
+  width: 2.7em;
+  height: 3px;
+  background-color: #f97c4a;
+  transition: all, 2s ease;
+}
+.underline:hover {
+  width: 5em;
+  height: 3px;
+}
+.section--title--text:hover ~ .underline {
+  width: 5em;
+  height: 3px;
+}
+.gallery--section p{
+  font-family: "Quicksand", sans-serif;
+  padding: 0em 1em 1em 1em;
+}
+
+
+
+.container--fixed--img{
+  display:flex;
+  justify-content:center;
+  background-image:url(https://s2.best-wallpaper.net/wallpaper/1920x1080/1810/Pine-trees-forest-fog_1920x1080.jpg);
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.fixed--img--text{
+   text-align:center;
+    font-family: "Poiret One", cursive;
+  text-transform: uppercase;
+   font-size:2em;
+   cursor:pointer;
+   padding:3em;
+   color:white;
+  
+}
+.rect--text{
+  padding-bottom:0.4em;
+}
+.rect{
+  width:2.7em;
+  height:3px;
+  background-color:#f97c4a;
+  transition:all, 2s ease;
+  
+}
+.rect:hover{
+  width:5em;
+  height:3px;
+  
+  
+}
+.rect--text:hover ~ .rect{
+  width:5em;
+  height:3px;
+}
+
+.footer--wrapper{
+  margin-top:2em;
+  display:flex;
+ 
+}
+.footer--one{
+  margin-left:3em;
+}
+.footer--two{
+  margin-left:auto;
+  margin-right:3em;
+}
+
+.footer--title{
+  font-family: "Poiret One", cursive;
+  text-transform: uppercase;
+  font-size:3em;
+  
+}
+.footer--one p{
+    font-family: "Quicksand", sans-serif;
+}
