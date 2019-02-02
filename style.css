@@ -2,7 +2,7 @@
 @import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
 
 
-body,html {
+body {
   margin: 0;
   overflow-x: hidden;
 }
@@ -147,6 +147,7 @@ header ul li:hover {
 .gallery {
   display: flex;
   justify-content: space-around;
+  width:100%;
 }
 .gal--img {
   width: 256px;
@@ -159,9 +160,13 @@ header ul li:hover {
 }
 
 .section--title--wrapper {
+  background-color:white;
+  position:sticky;
+  top:0;
   display: flex;
   justify-content: center;
   padding: 2em 0em;
+  z-index:10001;
 }
 .section--title {
   text-align: center;
@@ -192,7 +197,7 @@ header ul li:hover {
 }
 .gallery--section p{
   font-family: "Quicksand", sans-serif;
-  padding: 0em 1em 1em 1em;
+  padding-bottom:1em;
 }
 
 
@@ -201,6 +206,14 @@ header ul li:hover {
   display:flex;
   justify-content:center;
   background-image:url(https://s2.best-wallpaper.net/wallpaper/1920x1080/1810/Pine-trees-forest-fog_1920x1080.jpg);
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.container--fixed--img:nth-child(2){
+  display:flex;
+  justify-content:center;
+  background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg);
   background-attachment: fixed;
   background-repeat:no-repeat;
   background-size:cover;
@@ -239,7 +252,7 @@ header ul li:hover {
 .footer--wrapper{
   margin-top:2em;
   display:flex;
- 
+  background-color:grey;
 }
 .footer--one{
   margin-left:3em;
@@ -257,4 +270,35 @@ header ul li:hover {
 }
 .footer--one p{
     font-family: "Quicksand", sans-serif;
+}
+.other--img p{
+  font-family: "Quicksand", sans-serif;
+  text-align:center;
+}
+#ula{
+  margin-left:0.15em;
+}
+.about--wrapper{
+  display:flex;
+  justify-content:space-around;
+  
+}
+.about--text{
+  padding-left:2em;
+  text-align:center;
+}
+.about--wrapper h2{
+  font-family: "Poiret One", cursive;
+  text-transform: uppercase;
+  font-size:2em;
+ 
+}
+.about--wrapper p{
+ font-family: "Quicksand", sans-serif;
+
+  
+}
+.about--wrapper img{
+  margin-right:15em;
+  
 }
